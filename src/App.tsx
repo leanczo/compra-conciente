@@ -1,7 +1,13 @@
+import { Analytics } from '@vercel/analytics/react'
 import PurchaseDecisionQuiz from './components/PurchaseDecisionQuiz'
 
 function App() {
-  return <PurchaseDecisionQuiz />
+  return (
+    <>
+      <PurchaseDecisionQuiz />
+      <Analytics />
+    </>
+  )
 }
 
 export default App
